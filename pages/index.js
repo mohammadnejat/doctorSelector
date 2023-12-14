@@ -21,7 +21,7 @@ export default function Home (res) {
 }
 
 export async function getServerSideProps () {
-  const baseURL = 'http://localhost:4000/'
+  const baseURL = 'https://doctor-fake-apis.vercel.app/'
   const res = await axios
     .get(`${baseURL}posts`)
     .then(res => res.data)

@@ -162,7 +162,7 @@ function Index (res) {
   )
 }
 export async function getStaticPaths () {
-  const baseURL = 'http://localhost:4000/'
+  const baseURL = 'https://doctor-fake-apis.vercel.app/'
   const res = await axios
     .get(`${baseURL}posts`)
     .then(res => res.data)
@@ -174,7 +174,7 @@ export async function getStaticPaths () {
   }
 }
 export async function getStaticProps ({ params }) {
-  const baseURL = 'http://localhost:4000/'
+  const baseURL = 'https://doctor-fake-apis.vercel.app/'
   const res = await axios
     .get(`${baseURL}posts/${params.id}`)
     .then(res => res.data)
