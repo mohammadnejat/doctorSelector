@@ -21,7 +21,7 @@ function Index (res) {
       <Header />
       <section className='mx-2 mb-10 md:mx-auto max-w-screen-2xl'>
         <div className='rounded-lg '>
-          <div className='grid grid-cols-1 gap-2 mt-8 rounded-lg mx-52 md:grid-cols-7'>
+          <div className='grid grid-cols-1 gap-2 mt-8 rounded-lg md:mx-52 md:grid-cols-7'>
             <div className='p-6 bg-white rounded-lg md:col-span-4'>
               <div>
                 <div className='flex justify-between'>
@@ -86,15 +86,15 @@ function Index (res) {
               </div>
             </div>
             <div className='flex flex-col p-2 pb-12 bg-white rounded-lg md:col-span-3 h-fit'>
-              <div className='grid grid-cols-2 gap-6 mx-auto '>
-                <div className='flex flex-col items-center justify-center w-32 border rounded-2xl'>
+              <div className='grid grid-cols-2 gap-6 mx-auto mt-4'>
+                <div className='flex flex-col items-center justify-center w-32 p-2 border rounded-2xl'>
                   <MdOutlineAddHomeWork className='text-2xl text-cyan-400' />
                   <span className='font-medium black-text'>13 سال</span>
                   <p className='font-normal text-center gray-text'>
                     سابقه طبابت
                   </p>
                 </div>
-                <div className='flex flex-col items-center justify-center w-32 border rounded-2xl'>
+                <div className='flex flex-col items-center justify-center w-32 p-2 border rounded-2xl'>
                   <FaUserDoctor className='text-3xl text-green-600' />
                   <span className='font-medium black-text'>تخصص</span>
                   <p className='font-normal text-center gray-text'>

@@ -12,7 +12,7 @@ function Products () {
   return (
     <section>
       <div className='md:mx-auto '>
-        <div className='grid grid-cols-1 gap-3 px-4 justify-items-center'>
+        <div className='grid grid-cols-1 gap-3 px-2 justify-items-center'>
           {!usersData.length ? (
             <div className='p-10 mt-40 bg-white shadow'>
               <Triangle
@@ -32,7 +32,7 @@ function Products () {
                   key={item.id}
                   className='p-3 border border-gray-100 rounded-md'
                 >
-                  <div className='flex justify-between'>
+                  <div className='flex justify-between mb-6'>
                     <div className='flex'>
                       {' '}
                       <img
@@ -41,9 +41,9 @@ function Products () {
                         className='w-20 h-20 rounded-full md:w-24 md:h-24'
                       />
                       <div className='flex flex-col items-center gap-2 mt-2 mr-3'>
-                        <p className='text-lg md:text-xl black-text'>
+                        <Link href={`/${item.id}`} className=''>
                           {item.title}
-                        </p>
+                        </Link>
                         <span className='text-sm font-normal gray-text md:text-base'>
                           {item.professional}
                         </span>
@@ -60,7 +60,7 @@ function Products () {
                       <p className='text-sm font-bold md:text-base'>
                         {item.works}+
                       </p>
-                      <span className='text-xs font-medium gray-text md:text-base'>
+                      <span className='mt-3 text-xs font-medium gray-text md:text-base'>
                         مشاوره آنلاین
                       </span>
                     </div>

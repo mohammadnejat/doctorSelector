@@ -31,10 +31,10 @@ function Header () {
                     value={search}
                     placeholder='اسم دکتر'
                     type='text'
-                    className='rounded-s-full md:h-[53px] md:w-[500px] w-9/12  text-black pr-2 text-xl'
+                    className='rounded-s-full md:h-[53px] md:w-[500px] w-9/12 p-2   text-black pr-2 text-lg'
                   />
                   <button
-                    className='bg-cyan-800 md:w-[100px] border md:h-[53px]  rounded-e-full md:text-xl text-lg font-normal'
+                    className='bg-cyan-800 md:w-[100px] border md:h-[53px]  rounded-e-full md:text-xl text-md p-1 font-normal'
                     type='submit'
                     onClick={clickHandler}
                   >
