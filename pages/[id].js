@@ -14,7 +14,8 @@ import Footer from '@/components/Footer/Footer'
 import axios from 'axios'
 
 function Index (res) {
-  const [data, setData] = useState(res.res)
+  const [data, setData] = useState(res?.res)
+  console.log(data)
 
   return (
     <>
@@ -69,7 +70,7 @@ function Index (res) {
                   </span>
                 </div>
                 <div className='grid grid-cols-3 gap-4'>
-                  {data?.time.map(items => (
+                  {data?.time?.map(items => (
                     <>
                       <div
                         key={items.length}
