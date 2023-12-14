@@ -9,7 +9,6 @@ import { Triangle } from 'react-loader-spinner'
 
 function Products () {
   const { usersData, searchedItems } = useContext(MyContext)
-  console.log(searchedItems)
   return (
     <section>
       <div className='md:mx-auto '>

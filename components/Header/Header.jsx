@@ -18,7 +18,7 @@ function Header () {
   return (
     <>
       <header className='max-w-screen-2xl'>
-        <nav className='text-white bg-sky-600 '>
+        <nav className='text-white bg-sky-600'>
           <div className='px-12 py-6 md:mx-auto'>
             <div className='flex items-center justify-between'>
               <div>
@@ -31,7 +31,7 @@ function Header () {
                     value={search}
                     placeholder='اسم دکتر'
                     type='text'
-                    className='rounded-s-full md:h-[53px] md:w-[500px]  text-black pr-2 text-xl'
+                    className='rounded-s-full md:h-[53px] md:w-[500px] w-9/12  text-black pr-2 text-xl'
                   />
                   <button
                     className='bg-cyan-800 md:w-[100px] border md:h-[53px]  rounded-e-full md:text-xl text-lg font-normal'
