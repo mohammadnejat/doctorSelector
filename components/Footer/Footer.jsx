@@ -14,7 +14,7 @@ function Footer () {
         className='fixed cursor-pointer md:text-2xl bottom-14 md:!left-14'
         onClick={() => router.push('https://github.com/mohammadnejat')}
       >
-        <TfiHeadphoneAlt className='p-1 text-5xl border-2 border-gray-700 rounded-full md:text-7xl' />
+        <TfiHeadphoneAlt className='p-1 text-5xl text-white border-2  rounded-full md:text-5xl bg-[#0EA5E9]' />
       </div>
     </>
   )

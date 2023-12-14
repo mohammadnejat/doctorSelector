@@ -19,6 +19,9 @@ body {
   .black-text {
     @apply  text-black text-base font-bold 
   }
+  .blue {
+    @apply  text-[#0EA5E9] 
+  }
 }
 
 

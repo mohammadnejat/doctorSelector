@@ -17,9 +17,9 @@ function Header () {
   }
   return (
     <>
-      <header>
-        <nav className='text-white bg-sky-500 '>
-          <div className='py-6 md:mx-auto md:max-w-screen-2xl'>
+      <header className='max-w-screen-2xl'>
+        <nav className='text-white bg-sky-600 '>
+          <div className='px-12 py-6 md:mx-auto'>
             <div className='flex items-center justify-between'>
               <div>
                 <h2 className='font-serif md:text-3xl'>مشاوره پزشک آنلاین</h2>

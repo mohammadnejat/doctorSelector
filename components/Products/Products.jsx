@@ -12,7 +12,7 @@ function Products () {
   console.log(searchedItems)
   return (
     <section>
-      <div className='md:mx-auto md:max-w-screen-2xl'>
+      <div className='md:mx-auto '>
         <div className='grid grid-cols-1 gap-3 px-4 justify-items-center'>
           {!usersData.length ? (
             <div className='p-10 mt-40 bg-white shadow'>
@@ -28,10 +28,10 @@ function Products () {
             </div>
           ) : !searchedItems.length ? (
             usersData.map(item => (
-              <article className='w-full p-4 mt-4 transition duration-300 bg-white rounded-md shadow-lg md:w-8/12 hover:shadow-2xl'>
+              <article className='w-full p-4 mt-4 transition duration-300 bg-white rounded-md shadow-lg md:w-6/12 hover:shadow-2xl'>
                 <div
                   key={item.id}
-                  className='p-1 border border-gray-100 rounded-md'
+                  className='p-3 border border-gray-100 rounded-md'
                 >
                   <div className='flex justify-between'>
                     <div className='flex'>
@@ -45,7 +45,7 @@ function Products () {
                         <p className='text-lg md:text-xl black-text'>
                           {item.title}
                         </p>
-                        <span className='text-sm gray-text md:text-base'>
+                        <span className='text-sm font-normal gray-text md:text-base'>
                           {item.professional}
                         </span>
                       </div>
@@ -61,7 +61,7 @@ function Products () {
                       <p className='text-sm font-bold md:text-base'>
                         {item.works}+
                       </p>
-                      <span className='text-xs gray-text md:text-base'>
+                      <span className='text-xs font-medium gray-text md:text-base'>
                         مشاوره آنلاین
                       </span>
                     </div>
@@ -77,23 +77,23 @@ function Products () {
                           <span>{item.rate}</span>
                         </div>
                       </div>
-                      <span className='mt-1 text-base font-bold gray-text'>
+                      <span className='mt-1 text-base font-normal gray-text'>
                         امتیاز و نظر
                       </span>
                     </div>
                   </div>
                 </div>
                 <div className='h-[80px] bg-gray-200  flex flex-col gap-4 items-center py-2'>
-                  <p className='flex items-center gap-4 text-sm font-semibold md:text-base'>
+                  <p className='flex items-center gap-4 text-sm font-normal md:text-base'>
                     مشاوره انلاین{' '}
                     <MdOutlineContactMail className='text-base md:text-2xl' />
                   </p>
-                  <p className='flex items-center gap-4 text-sm font-semibold md:text-base'>
+                  <p className='flex items-center gap-4 text-sm font-normal md:text-base'>
                     مشاوره تلفنی{' '}
                     <PiPhoneCallFill className='text-base md:text-2xl' />
                   </p>
                 </div>
-                <div className='w-full mt-2 rounded-md bg-sky-500'>
+                <div className='w-full mt-2 rounded-md bg-sky-600'>
                   <Link
                     href={`/${item.id}`}
                     className='flex justify-center py-2 text-sm text-white md:text-lg md:py-3 hover:shadow-lg'
@@ -154,7 +154,7 @@ function Products () {
                           <span>{item.rate}</span>
                         </div>
                       </div>
-                      <span className='mt-1 text-base font-bold gray-text'>
+                      <span className='mt-1 text-base !font-light gray-text'>
                         امتیاز و نظر
                       </span>
                     </div>
