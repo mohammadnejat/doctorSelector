@@ -25,7 +25,7 @@ function Header () {
                 <h2 className='font-serif md:text-3xl'>مشاوره پزشک آنلاین</h2>
               </div>
               <div>
-                <form className='flex'>
+                <form className='flex justify-between'>
                   <input
                     onChange={e => setSearch(e.target.value)}
                     value={search}
@@ -34,7 +34,7 @@ function Header () {
                     className='rounded-s-full md:h-[53px] md:w-[500px] w-9/12 p-2   text-black pr-2 text-lg'
                   />
                   <button
-                    className='bg-cyan-800 md:w-[100px] border md:h-[53px]  rounded-e-full md:text-xl text-md p-1 font-normal'
+                    className='bg-cyan-800 md:w-[100px] border md:h-[53px] w-fit  rounded-e-full md:text-xl text-md p-3 font-normal'
                     type='submit'
                     onClick={clickHandler}
                   >

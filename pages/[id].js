@@ -24,7 +24,7 @@ function Index (res) {
           <div className='grid grid-cols-1 gap-2 mt-8 rounded-lg md:mx-52 md:grid-cols-7'>
             <div className='p-6 bg-white rounded-lg md:col-span-4'>
               <div>
-                <div className='flex justify-between'>
+                <div className=''>
                   <div className='flex items-center gap-5'>
                     <img
                       src={data.img}
@@ -48,7 +48,7 @@ function Index (res) {
                     </div>
                   </div>
                   <div className=''>
-                    <div className='w-24 p-2 font-medium text-center text-white border rounded-md bg-cyan-800'>
+                    <div className='w-24 p-2 mt-2 font-medium text-center text-white border rounded-md bg-cyan-800'>
                       <p>{data.city}</p>
                     </div>
                   </div>
@@ -73,10 +73,10 @@ function Index (res) {
                     <>
                       <div
                         key={items.length}
-                        className='flex flex-col items-center justify-center p-2 text-white border-2 cursor-pointer md:w-36 bg-sky-600 rounded-2xl'
+                        className='flex flex-col items-center justify-center p-2 text-white transition duration-300 border-2 cursor-pointer hover:bg-white hover:text-black hover:border-sky-600 md:w-36 bg-sky-600 rounded-2xl'
                       >
                         <p className='text-lg font-normal'>{items.day}</p>
-                        <span className='font-normal text-white '>
+                        <span className='font-normal '>
                           {items.time1} تا {items.time2}
                         </span>
                       </div>
@@ -98,19 +98,21 @@ function Index (res) {
                   <FaUserDoctor className='text-3xl text-green-600' />
                   <span className='font-medium black-text'>تخصص</span>
                   <p className='font-normal text-center gray-text'>
-                    متخصص قلب و عروق
+                    {data.professional}
                   </p>
                 </div>
                 <div className='flex flex-col items-center w-32 p-2 border justify-justify-center rounded-2xl'>
                   <TiDocumentText className='text-3xl text-red-500' />
-                  <span className='font-medium black-text'>12656923</span>
+                  <span className='font-medium black-text'>
+                    {data.workNumber}
+                  </span>
                   <p className='font-normal text-center gray-text'>
                     شماره نظام
                   </p>
                 </div>
                 <div className='flex flex-col items-center w-32 p-2 border justify-justify-center rounded-2xl'>
                   <FaStar className='text-3xl text-yellow-500' />
-                  <span className='font-medium black-text'>4.6</span>
+                  <span className='font-medium black-text'>{data.rate}</span>
                   <p className='font-normal text-center gray-text'>
                     رای مراجعین
                   </p>
@@ -149,14 +151,17 @@ function Index (res) {
                   <span className='text-base'>هزینه مناسب و بهترین مشاوره</span>
                 </div>
               </div>
-              <div className='h-2 my-2 border-t border-gray-100' />
-              <div className='flex justify-around'>
+              <div className='h-2 my-6 border-t border-gray-100' />
+
+              <div className='md:items-center md:flex md:justify-around'>
                 <div className='flex flex-col items-center px-4'>
                   <h2 className='text-base font-medium'>قیمت برای 10 دقیقه:</h2>
-                  <p className='mt-2 black-text'>100,000 تومان</p>
+                  <p className='mt-2 black-text'>
+                    {data.price.toLocaleString()} تومان
+                  </p>
                 </div>
 
-                <div className='p-3 px-10 text-lg transition duration-300 border-2 rounded-lg cursor-pointer hover:bg-sky-600 hover:text-white border-sky-600 text-sky-600'>
+                <div className='p-2 my-6 text-lg text-center transition duration-300 border-2 rounded-lg cursor-pointer md:px-10 md:p-4 hover:bg-sky-600 hover:text-white border-sky-600 text-sky-600'>
                   مشاوره آنلاین
                 </div>
               </div>

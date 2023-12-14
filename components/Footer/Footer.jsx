@@ -6,7 +6,7 @@ function Footer () {
   const router = useRouter()
   return (
     <>
-      <div className='bottom-0 left-0 right-0 flex justify-center mt-2 text-base text-center bg-white shadow-lg md:text-2xl'>
+      <div className='bottom-0 left-0 right-0 flex justify-center h-full mt-2 mb-1 text-base text-center bg-white shadow-lg md:text-2xl'>
         <h1>ساخته شده توسط سیدمحمد نجات </h1>
         <IoHeartCircleOutline className='text-3xl text-cyan-400' />
       </div>
