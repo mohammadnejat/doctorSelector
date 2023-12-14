@@ -22,7 +22,7 @@ function Header () {
           <div className='py-6 md:mx-auto md:max-w-screen-2xl'>
             <div className='flex items-center justify-between'>
               <div>
-                <h2 className='font-serif md:text-3xl'>لیست دکتر های مشاوره</h2>
+                <h2 className='font-serif md:text-3xl'>مشاوره پزشک آنلاین</h2>
               </div>
               <div>
                 <form className='flex'>

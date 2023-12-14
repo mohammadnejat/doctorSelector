@@ -3,11 +3,10 @@ import Header from '@/components/Header/Header'
 import Products from '@/components/Products/Products'
 import MyContext from '@/context/context'
 import axios from 'axios'
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect } from 'react'
 
 export default function Home (res) {
-  const { usersData, setUsersData } = useContext(MyContext)
-  // const [data, setData] = useState([res])
+  const { setUsersData } = useContext(MyContext)
   useEffect(() => {
     setUsersData(res.res)
   }, [])
