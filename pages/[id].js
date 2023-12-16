@@ -38,7 +38,7 @@ function Index (res) {
               </span>
             </div>
           </div>
-          <div className='flex justify-between mt-6'>
+          <div className='grid grid-cols-3 gap-6 mt-6'>
             <div className='px-2 bg-white rounded-lg shadow-lg'>
               <div className='flex flex-col items-center px-3 '>
                 <FaUserDoctor className='bg-[#E9FFF4] text-4xl mb-1 py-1 rounded-b-md text-[#00A655]' />
@@ -127,7 +127,7 @@ function Index (res) {
                 <>
                   <div
                     key={items.length}
-                    className='flex flex-col items-center justify-center p-2 text-indigo-500 transition duration-300 border-2 border-indigo-500 cursor-pointer rounded-xl'
+                    className='flex flex-col items-center justify-center p-4 text-indigo-500 transition duration-300 border-2 border-indigo-500 cursor-pointer rounded-xl'
                   >
                     <p className='text-lg font-normal'>{items.day}</p>
                     <span className='font-normal text-black'>
@@ -145,8 +145,8 @@ function Index (res) {
         </section>
         <section className='hidden mx-2 mb-10 md:mx-auto max-w-screen-2xl md:block'>
           <div className='rounded-lg '>
-            <div className='grid grid-cols-1 gap-2 mt-8 rounded-lg md:mx-52 md:grid-cols-7'>
-              <div className='p-6 bg-white rounded-lg md:col-span-4'>
+            <div className='grid  gap-2 mt-8 rounded-lg !mx-52 !grid-cols-7'>
+              <div className='p-6 bg-white rounded-lg !col-span-4'>
                 <div>
                   <div className=''>
                     <div className='flex items-center gap-5'>
@@ -185,7 +185,7 @@ function Index (res) {
                       <TbMessage className='text-4xl' />
                       درباره پزشک
                     </h2>
-                    <h6 className='p-4 text-md md:w-10/12'>{data.about}</h6>
+                    <h6 className='p-4 text-md !w-10/12'>{data.about}</h6>
                   </div>
                   <div className='h-2 my-6 border-t border-gray-100' />
                   <div className='flex items-center gap-2 my-4'>
@@ -194,12 +194,12 @@ function Index (res) {
                       ساعات پاسخ گویی به مشاوره تلفنی
                     </span>
                   </div>
-                  <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
+                  <div className='grid gap-4 !grid-cols-3'>
                     {data?.time?.map(items => (
                       <>
                         <div
                           key={items.length}
-                          className='flex flex-col items-center justify-center p-2 text-white transition duration-300 border-2 cursor-pointer hover:bg-white hover:text-black hover:border-sky-600 md:w-36 bg-sky-600 rounded-2xl'
+                          className='flex flex-col items-center justify-center p-2 text-white transition duration-300 border-2 cursor-pointer hover:bg-white hover:text-black hover:border-sky-600 !w-36 bg-sky-600 rounded-2xl'
                         >
                           <p className='text-lg font-normal'>{items.day}</p>
                           <span className='font-normal '>
@@ -211,7 +211,7 @@ function Index (res) {
                   </div>
                 </div>
               </div>
-              <div className='flex flex-col p-2 pb-12 bg-white rounded-lg md:col-span-3 h-fit'>
+              <div className='flex flex-col p-2 pb-12 bg-white rounded-lg !col-span-3 h-fit'>
                 <div className='grid grid-cols-2 gap-6 mx-auto mt-4'>
                   <div className='flex flex-col items-center justify-center w-32 p-2 border rounded-2xl'>
                     <MdOutlineAddHomeWork className='text-2xl text-cyan-400' />
@@ -245,7 +245,7 @@ function Index (res) {
                   </div>
                 </div>
                 <div className='flex flex-col w-full gap-3 p-2'>
-                  <div className='flex items-center justify-between gap-4 px-4 md:px-0'>
+                  <div className='flex items-center justify-between gap-4 !px-0'>
                     <div className='flex gap-4 mt-8'>
                       <BiPhoneCall className='text-4xl rounded-lg text-cyan-300 bg-cyan-100' />
                       <span className='text-xl font-semibold text-slate-600'>
@@ -281,7 +281,7 @@ function Index (res) {
                 </div>
                 <div className='h-2 my-6 border-t border-gray-100' />
 
-                <div className='md:items-center md:flex md:justify-around'>
+                <div className='!items-center !flex !justify-around'>
                   <div className='flex flex-col items-center px-4'>
                     <h2 className='text-base font-medium'>
                       قیمت برای 10 دقیقه:
@@ -291,7 +291,7 @@ function Index (res) {
                     </p>
                   </div>
 
-                  <div className='p-2 my-6 text-lg text-center transition duration-300 border-2 rounded-lg cursor-pointer md:px-10 md:p-4 hover:bg-sky-600 hover:text-white border-sky-600 text-sky-600'>
+                  <div className=' my-6 text-lg text-center transition duration-300 border-2 rounded-lg cursor-pointer !px-10 !p-4 hover:bg-sky-600 hover:text-white border-sky-600 text-sky-600'>
                     مشاوره آنلاین
                   </div>
                 </div>
