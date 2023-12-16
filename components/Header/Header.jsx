@@ -19,7 +19,7 @@ function Header () {
     <>
       <header className='max-w-screen-2xl'>
         <nav className='text-white bg-sky-600'>
-          <div className='px-12 py-6 md:mx-auto'>
+          <div className='px-12 py-2 md:mx-auto'>
             <div className='items-center justify-between text-center md:flex'>
               <div>
                 <h2 className='mb-3 font-serif md:text-3xl'>
