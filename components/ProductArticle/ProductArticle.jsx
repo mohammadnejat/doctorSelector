@@ -5,7 +5,7 @@ function ProductArticle (item) {
   return (
     <article
       key={item.id}
-      className='w-full p-2 mt-4 transition duration-300 bg-white rounded-md shadow-lg md:w-6/12 hover:shadow-2xl'
+      className='w-full px-2 mt-4 transition duration-300 bg-white rounded-md shadow-lg md:w-6/12 hover:shadow-2xl'
     >
       <Link href={`/${item.id}`}>
         <div className='flex items-center justify-between'>

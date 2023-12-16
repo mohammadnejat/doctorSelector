@@ -38,23 +38,23 @@ function Index (res) {
               </span>
             </div>
           </div>
-          <div className='grid grid-cols-3 gap-6 mt-6'>
-            <div className='px-2 bg-white rounded-lg shadow-lg'>
-              <div className='flex flex-col items-center px-3 '>
+          <div className='grid grid-cols-3 gap-3 mt-6'>
+            <div className='bg-white rounded-lg shadow-lg '>
+              <div className='flex flex-col items-center px-1 '>
                 <FaUserDoctor className='bg-[#E9FFF4] text-4xl mb-1 py-1 rounded-b-md text-[#00A655]' />
                 <span className='my-2'>سال {data.experince}</span>
                 <span className='mb-3 text-gray-400 '>سابقه طبابیت</span>
               </div>
             </div>
-            <div className='px-2 bg-white rounded-lg shadow-lg'>
-              <div className='flex flex-col items-center px-3 '>
+            <div className='bg-white rounded-lg shadow-lg '>
+              <div className='flex flex-col items-center px-1 '>
                 <CgLoadbarDoc className='bg-[#FFF1F6] text-4xl mb-1 py-1 rounded-b-md text-[#FB2B76]' />
                 <span className='my-2'>{data.workNumber}</span>
                 <span className='mb-3 text-gray-400 '>شماره نظام</span>
               </div>
             </div>
-            <div className='px-2 bg-white rounded-lg shadow-lg'>
-              <div className='flex flex-col items-center px-3 '>
+            <div className='bg-white rounded-lg shadow-lg '>
+              <div className='flex flex-col items-center px-1 '>
                 <FaStar className='bg-[#FFFADC] text-4xl mb-1 py-1 rounded-b-md text-[#FFD746]' />
                 <span className='my-2'>{data.rate}</span>
                 <span className='mb-3 text-gray-400 '>رای مراجعین</span>
@@ -122,7 +122,7 @@ function Index (res) {
             <h3 className='my-6 font-semibold text-gray-600'>
               ساعات کاری و جلسات پزشک
             </h3>
-            <div className='grid grid-cols-3 gap-6'>
+            <div className='grid grid-cols-3 gap-4'>
               {data?.time?.map(items => (
                 <>
                   <div

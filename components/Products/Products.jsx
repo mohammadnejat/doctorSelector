@@ -10,7 +10,7 @@ function Products () {
     <section>
       <div className='md:mx-auto '>
         <h2 className='mt-4 text-2xl md:mr-36'>لیست پزشکان</h2>
-        <div className='grid grid-cols-1 gap-3 px-2 justify-items-center'>
+        <div className='grid grid-cols-1 gap-2 px-2 justify-items-center'>
           {usersData.length === 0 ? (
             <div className='p-10 mt-40 bg-white shadow'>
               <Triangle
