@@ -127,7 +127,7 @@ function Index (res) {
                 <>
                   <div
                     key={items.length}
-                    className='flex flex-col items-center justify-center p-4 text-indigo-500 transition duration-300 border-2 border-indigo-500 cursor-pointer rounded-xl'
+                    className='flex flex-col items-center justify-center px-2 py-3 text-indigo-500 transition duration-300 border-2 border-indigo-500 cursor-pointer rounded-xl'
                   >
                     <p className='text-lg font-normal'>{items.day}</p>
                     <span className='font-normal text-black'>
